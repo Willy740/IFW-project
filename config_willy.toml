@@ -1,0 +1,5 @@
+version = 1.0
+project_name = "IFW-project"
+
+project.polling_frequency = 10
+project.alert_threshold = 5.0
