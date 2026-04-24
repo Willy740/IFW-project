@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M670CSMKML"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M670CSMKML');
+</script>
+
+<!-- Agility - Responsive HTML5/CSS3 Template by SevenSpark https://agility-html.sevenspark.com -->
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>Nauty Traces &ndash; Home</title>
+<meta name="description" content="Nauty Traces Home: Graph canonical labeling and automorphism group computation for graph isomorphism">
+<meta name="author" content="Brendan McKay and Adolfo Piperno">
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/skeleton.css">
+<link rel="stylesheet" href="stylesheets/layout.css">
+<!-- prettyPhoto plugin -->
+<link rel="stylesheet" href="javascripts/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+<!-- FlexSlider plugin -->
+<link rel="stylesheet" href="javascripts/flexslider/flexslider.css" type="text/css" media="screen" /> 
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<!-- Fonts
+================================================== -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<!-- Modernizr -->
+<script type="text/javascript" src="javascripts/modernizr.js"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" href="stylesheets/ie7.css">
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36765197-1', 'uniroma1.it');
+  ga('send', 'pageview');
+
+</script>
+<!--<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36765197-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>-->
+<script type="text/javascript">
+
+ var stile = "top=10, left=10, width=750, height=160, status=no, menubar=no, toolbar=no scrollbars=no";
+ 
+function Popup(apri) 
+{
+  window.open(apri, "", stile);
+}
+</script>
+</head>
+<!-- <body class="skin-red" id="body"> -->
+<body class="skin-red" id="body">
+<div class="wrap">
+<!-- Primary Page Layout
+================================================== -->
+<div class="drop-container">
+<div class="drop-panel">
+<div class="container">
+<div class="row">
+<div class="six columns">
+	<div class="two columns alpha">
+		<!-- lightbox with image -->
+		<!-- <a href="#"><img src="images/bdm.png" alt="BDM" width="100" height="100" class="scale-with-grid" /></a> -->
+		<!-- end lightbox with image -->
+	</div>
+	<div class="four columns omega"><p class="remove-bottom" style="font-size:14px;">Brendan McKay</p>
+		<p style="line-height:140%">Department of Computer Science
+    <br>
+		Australian National University
+    <br>
+		Canberra ACT 0200, Australia
+    <br>
+		&#098;&#100;&#109;&#032;&#097;&#116;&#032;&#099;&#115;&#032;&#100;&#111;&#116;&#032;&#097;&#110;&#117;&#032;&#100;&#111;&#116;&#032;&#101;&#100;&#117;&#032;&#100;&#111;&#116;&#032;&#097;&#117;<br>
+        <a href="https://cs.anu.edu.au/~bdm/" class="excerpt-link" style="color:#CCC; font-size:inherit" title="B.McKay" target="_blank">Personal page &rarr;</a>
+        </p>
+	</div>
+</div>
+<div class="ten columns">
+	<div class="two columns alpha">
+		<!-- lightbox with image -->
+		<!-- <a href="#"><img src="images/ap.png" alt="AP" width="100" height="100" class="scale-with-grid" /></a> -->
+		<!-- end lightbox with image -->
+	</div>
+	<div class="eight columns omega">
+		<p class="remove-bottom" style="font-size:14px;">Adolfo Piperno</p>
+		<p style="line-height:140%">Dipartimento di Informatica
+    <br>
+		Sapienza Universit&agrave; di Roma
+    <br>
+		Via Salaria 113, 00198 Rome, Italy
+    <br>
+		(&lambda;&#120;&#121;&#046;&#112;&#105;&#112;&#101;&#114;&#110;&#111;&#120;&#100;&#105;&#121;&#117;&#110;&#105;&#114;&#111;&#109;&#097;&#049;&#121;&#105;&#116;)&#032;&#064;&#032;&#046; <a href="https://en.wikipedia.org/wiki/Lambda_calculus" title="The lambda-calculus" class="excerpt-link" style="color:#FC0" target="_blank">Wikipedia: The Lambda-Calculus &rarr;</a><br>
+        (&lambda;xy.M)PQ = M[P/x][Q/y] <em>&quot;substitute P for x and Q for y in M&quot;</em><br>
+        <a href="https://pallini.di.uniroma1.it/Personal.html" class="excerpt-link" style="color:#CCC; font-size:inherit" title="A.Piperno" target="_blank">Personal page &rarr;</a> 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="drop-bar-container remove-bottom">
+<div class="container remove-bottom">
+<div class="row remove-bottom">
+<div class="eight column remove-bottom" style="font-size:smaller">
+This site uses the <em>highly readable</em> font <a href="https://www.biancoeneroedizioni.it/font/" 
+class="excerptnotrnobord-link" style="color:#d83f28" target="_blank">biancoenero&copy;</a>
+<img src="images/spacer.gif" width="0" height="16" alt="16height">
+</div>
+<div class="drop-bar eight columns far-edge remove-bottom">
+<a href="https://users.cecs.anu.edu.au/~bdm/nauty/" title="nauty" class="excerpt-link">
+<img src="images/Australia.png" width="16" height="16" alt="Australia">&nbsp;go to 
+Brendan McKay's nauty page &rarr;</a>
+<a id="drop-panel-expando">Contacts</a>
+</div>
+<hr class="fat remove-bottom">
+</div>
+</div>
+</div>
+</div>
+<!-- Header -->
+<header id="header" class="container" style="background-color:#FFCC99; background-image:url('images/sts.svg')">
+<div id="header-inner" class="sixteen columns over remove-bottom">
+<div id="masthead" class="seven column alpha">
+<h1 id="site-title" class="remove-bottom"><a href="index.html">nauty and Traces</a></h1>
+<h3 class="remove-bottom" style="font-size:18px">Brendan McKay and Adolfo Piperno</h3>
+<div id="sub-title" style="margin:.2em 0 0 0;">Graph canonical labeling and <br>
+<img src="images/spacer.gif" width="0" height="12" alt="12height">automorphism group computation
+</div>
+</div>
+<nav id="main-nav" class="nine column omega">
+<a href="#main-nav-menu" class="mobile-menu-button button">+ Menu</a>
+<img src="images/spacer.gif" width="30" height="1" alt="30space">
+<ul id="main-nav-menu" class="nav-menu"  style="background-color:#FFCC99">
+  <li id="nav-home" class="current" style="margin:0 .6em">
+  <a href="index.html">Home</a>
+  </li>
+  <li id="nav-descr" style="margin:0 .6em">
+<a>Description</a>
+<ul>
+<li><a href="Introduction.html">Introduction</a></li>
+<li><a href="SearchTree.html">Search Tree</a></li>
+<li><a href="TheTrace.html">Why "Traces"?</a></li>
+<li><a href="SmallDegree.html">Low Degree</a></li>
+<li><a href="FinalLevel.html">Automorphisms in Traces</a></li>
+</ul>						
+</li>
+  <li id="nav-graphs" style="margin:0 .6em">
+  <a href="Graphs.html">Graphs</a>
+  </li>
+  <li id="nav-links" style="margin:0 .6em">
+  <a href="Links.html">Links</a> 
+  </li>
+  <li id="nav-perf" style="margin:0 .6em">
+  <a>Experiments</a>
+  <ul>
+  <li><a href="StronglyRegular.html">Strongly Regular</a></li>
+  <li><a href="RandomGraphs.html">Random</a></li>
+  <li><a href="Hypercubes.html">Hypercubes</a></li>
+  <li><a href="VertexTrans.html">Vertex Transitive</a></li>
+  <li><a href="Grids.html">Grids</a></li>
+  <li><a href="Hadamard.html">Hadamard Matrix</a></li>							
+  <li><a href="Furgad.html">F&uuml;rer Gadget Constructions<br>(Cai et al., Miyazaki)</a></li>							
+  <li><a href="Planes.html">Projective Planes</a></li>							
+  <li><a href="Miscellanea.html">Miscellanea</a></li>							
+  </ul>						
+  </li>
+  <li id="nav-guide" style="margin:0 .6em">
+  <a href="Guide.html">User's Guide</a> 
+  </li>
+</ul>
+</nav>
+</div>
+<hr class="remove-bottom">
+</header>
+<div class="container" style="text-align:center">
+<h6>CURRENT VERSION: 2_9_3 (JAN 1, 2026)</h6>
+</div>
+<!-- end Header -->
+<!-- Main Container -->
+<div class="container" id="main" role="main">
+<div class="two-thirds column no-trans">
+
+<p><strong>nauty</strong> and <strong>Traces</strong> are programs for computing automorphism groups of graphs and digraphs <sup>[<a href="#ftn.id001">*</a>]</sup>.
+They can also produce a canonical label. They are written in a portable subset of C, and run on a considerable number of different systems.</p>
+<p>
+ There is a small suite of programs called <b>gtools</b> included
+ in the package.  For example, <b>geng</b> can generate
+ non-isomorphic graphs very quickly.  There are also generators for
+ bipartite graphs, digraphs, and multigraphs, and programs for manipulating 
+ files of graphs in a compact format.
+</p>
+<div class="footnote">
+  <p>
+<sup>[<a id="ftn.id001">*</a>]</sup>
+At present, <strong>Traces</strong> does not accept digraphs. </p></div>
+<h3 class="remove-bottom">Documentation</h3>
+<p> A complete manual is included in the package.  It is also
+ separately available <a href="Guide.html">here</a>.
+</p>
+<p>
+ The original design of <b>nauty</b> is in McKay, B.D.,
+ <em>Practical Graph Isomorphism</em>, Congressus Numerantium, 30 (1981) 45-87.
+ A <a href="https://cs.anu.edu.au/~bdm/nauty/pgi.pdf" target="_blank">scan</a> (2.6 MB) is available.
+</p>
+<p>
+ The original design of <b>Traces</b> is in in Piperno, A.,
+ <em>Search Space Contraction in Canonical Labeling of Graphs</em>, 
+ available at <a href="https://arxiv.org/abs/0804.4881" target="_blank">arxiv.org</a>.
+</p>
+<p>
+The current algorithms behind <b>nauty</b> and <b>Traces</b> 
+are described in the paper of McKay and Piperno cited below.</p>
+
+<h3 class="remove-bottom">How to cite nauty or Traces</h3>
+<p>If you use <strong>nauty</strong> or <strong>Traces</strong> in your research, 
+please cite this paper:<br>
+<span style="font-weight:600;">McKay, B.D. and Piperno, A., 
+<em>Practical Graph Isomorphism, II</em>,
+<br>
+Journal of Symbolic Computation, 60 (2014), 
+	pp. 94-112</span>, <a href="https://doi.org/10.1016/j.jsc.2013.09.003">https://doi.org/10.1016/j.jsc.2013.09.003</a>
+ (a BibTex entry is <a href="javascript:Popup('pgi2bibtex.bib')">here</a>).
+</p>
+
+<h3 class="remove-bottom" id="howtogetit">How to get it</h3>
+<p>If you agree to the restrictions listed below, you may fetch
+ version 2_9_3 of <b>nauty</b>, and version 2.2 of <strong>Traces</strong>, as a 
+ <a href="nauty2_9_3.tar.gz" download onClick="_gaq.push(['_trackEvent', 'nautyTraces', 'download', 'nauty2_9_3', '5', true]);" target="_self"
+ style="font-size:inherit; text-transform:none; font-weight:bold">gzipped tar file</a> (∼3.4 MB).
+</p>
+<p>
+See the file <a href="changes24-29.txt" target="_blank">changes24-29.txt</a>
+for a summary of recent changes.
+</p>
+<p>
+ The package uses the GNU <b>autoconf</b> installation system.
+ You are advised to read the file <a href="README.txt" target="_blank">README.txt</a> before compiling anything.
+</p>
+<h3 class="remove-bottom">Installation procedure</h3>
+ <span style="font-family: monospace; font-size:large">
+   &nbsp;&nbsp; tar xvzf nauty2_9_3.tar.gz<br/>
+   &nbsp;&nbsp; cd nauty2_9_3<br/>
+   &nbsp;&nbsp; ./configure<br/>
+   &nbsp;&nbsp; make
+ </span>
+<p>
+After this procedure, the directory <span style="font-family: monospace; font-size:large">nauty2_9_3</span> contains all
+the executables.  Move them somewhere else as you wish.
+</p>
+<h3 class="remove-bottom">Dreadnaut users</h3>
+<p>Type <span style="font-family: monospace; font-size:large">An</span>
+to enter <strong>nauty</strong> dense mode, 
+<span style="font-family: monospace; font-size:large">As</span> 
+for <strong>nauty</strong> sparse mode, 
+<span style="font-family: monospace; font-size:large">At</span>
+for <strong>Traces</strong> mode. Type an additional 
+<span style="font-family: monospace; font-size:large">+</span>
+to convert the current graph. With a few exceptions, all 
+<strong>dreadnaut</strong>
+commands are available in every mode.
+See the <a href="Guide.html">manual</a> for a full description of the new features.</p>
+
+<h3 class="remove-bottom">Nauty mailing list</h3>
+<p>You are invited to join the
+ <a href="https://mailman.anu.edu.au/mailman/listinfo/nauty" target="_blank">nauty
+ mailing list</a> so that you can receive notices of updates and
+ exchange information with other users.
+</p>
+</div>
+
+<div class="one-third column">
+<div class="row">
+<h3 class="remove-bottom" style="font-size:18px">News and comments</h3>
+<!-- Blog List -->
+<div class="bloglist">
+<!-- blog list article -->
+<article class="post five columns alpha with-meta">
+<div class="row remove-bottom">
+<div class="four columns remove-bottom" style="margin:0">
+<header>
+<h1>Nauty &amp; Traces version 2_9_3 
+</h1>
+<!-- post meta -->
+<div class="post-meta">
+<a class="post-category">Release</a>
+&nbsp;by <a class="post-author">BDM</a> on
+<time datetime="2025-07-17" class="post-date">JAN 1, 2026</time>
+</div>
+<!-- end .post-meta -->
+</header>
+</div>
+<img src="images/new.png" alt="New" width="40" height="40" align="right">
+</div>
+<!-- post excerpt -->
+<div class="post-excerpt">
+<p>
+ Version 2_9_3 of <strong>nauty and Traces</strong> 
+ has been released on JAN 1, 2026. See the file <a href="changes24-29.txt" target="_blank">changes24-29.txt</a>
+for a summary of recent changes.
+ 
+Please report problems with the programs or errors in the
+documentation to one of the authors (see <a href="#contact">Contacts</a> below).
+<a class="button nobottom" href="#howtogetit">Download Nauty&amp;Traces 2_9_3</a>
+
+</p>
+</div>
+<!-- end .post-excerpt -->
+</article>
+<!-- end blog list article -->
+</div><!-- Blog List -->
+<div class="bloglist">
+</div>
+<div class="bloglist">
+<!-- blog list article -->
+<article class="post five columns alpha with-meta">
+<header>
+<h1>Nauty &amp; Traces 2.5</h1>
+<!-- post meta -->
+<div class="post-meta">
+<a class="post-category">Release</a>
+&nbsp;by <a class="post-author">BDM</a> on
+<time datetime="2016-02-26" class="post-date">Feb 26, 2016</time>
+</div>
+<!-- end .post-meta -->
+</header>
+<!-- post excerpt -->
+<div class="post-excerpt">
+<p>
+Version 2.5r9 of <strong>nauty and traces</strong> is available 
+<a href="nauty25r9.tar.gz">here</a>.
+Previous versions of <strong>nauty</strong>
+are available at Brendan McKay's 
+<a href="https://users.cecs.anu.edu.au/~bdm/nauty/" title="nauty">nauty page</a>.
+ </p>
+</div>
+<!-- end .post-excerpt -->
+</article>
+<!-- end blog list article -->
+</div>
+<!-- end .bloglist -->
+<!-- Blog List -->
+<div class="bloglist">
+<!-- blog list article -->
+<article class="post five columns alpha with-meta">
+<header>
+<h1>Request</h1>
+<!-- post meta -->
+<div class="post-meta">
+<a class="post-category">Testing</a>
+&nbsp;by <a class="post-author">nauty&amp;Traces</a> on
+<time datetime="2025-07-17" class="post-date">JAN 1, 2026</time>
+</div>
+<!-- end .post-meta -->
+</header>
+<!-- post excerpt -->
+<div class="post-excerpt">
+<p>
+ This edition of the source
+ code and installation scripts has been tested on a variety of
+ Unix/Linux systems (including MacOS X), but many
+ systems remain untested.  Please send your success and failure stories.
+ Note that old or broken systems may not be supported at all; try an
+ older version of <b>nauty</b>.  A few utilities
+ such as <b>shortg</b> require a Unix-like environment.
+</p>
+</div>
+<!-- end .post-excerpt -->
+</article>
+<!-- end blog list article -->
+</div>
+<!-- end .bloglist -->
+<!-- Blog List -->
+<div class="bloglist">
+<!-- blog list article -->
+<article class="post five columns alpha with-meta">
+        <header>
+            <h1><a href="post-5" class="">A drawing tool: dretodot</a></h1>
+    <!-- post meta -->
+    <div class="post-meta">
+        <div class="omega columns alpha">
+            <a href="#" class="post-category">Software</a>
+        </div>
+        <div class="alpha columns omega ">
+            &nbsp;by <a href="#" class="post-author">AP</a> on
+            <time datetime="2016-02-20" class="post-date">Feb 20, 2016</time>
+        </div>
+    </div>
+    <!-- end .post-meta -->
+    
+        </header>
+            
+        <!-- post excerpt -->
+        <div class="post-excerpt">
+            <p><b>dretodot</b> is a tool for drawing graphs in <b>dreadnaut</b> format; it produces a 
+            <b>.dot</b> file which can be rendered by 
+            <a href="https://www.graphviz.org/" target="_blank"><b>Graphviz</b></a>. 
+            Click below for a short video tutorial.</p>
+			
+            <img src="images/spacer.png" width="1" height="8">
+        </div>
+        <!-- end .post-excerpt -->
+<!-- lightbox with video -->
+    <a href="#video-5" data-rel="prettyPhoto" class="video-link" title="dretodot video tutorial">
+        <img src="images/scrshot.png" alt="dretodot" class="scale-with-grid"/>
+        </a>
+    <div id="video-5" class="inline-video-lightbox-content">	
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe src="https://player.vimeo.com/video/156178935?portrait=0"></iframe>									
+            </div><!-- end .video-container -->
+        </div><!-- end .video-wrapper -->							
+    </div>
+<!-- end lightbox with video -->    
+
+</article>
+<!-- end blog list article -->
+</div>
+<!-- end .bloglist -->
+</div>
+<div class="row">
+<h3 class="remove-bottom" style="font-size:16px">Graph Pictures</h3>
+<div class="post-excerpt">
+<!-- FlexSlider -->
+<div class="flex-container">
+<div class="flexslider" style="padding-bottom: 20pt;" >
+<ul class="slides" style="border:medium">
+<li>
+<img src="images/graphs/DC.png" alt="DC"/>
+</li>
+
+<li>
+<img src="images/graphs/Rantree2K.png" alt="Rantree"/>
+</li>
+
+<li>
+<img src="images/graphs/Pg9.png" alt="Pg9"/>
+</li>
+
+<li>
+<img src="images/graphs/Tran100.png" alt="Tran"/>
+</li>
+</ul>
+
+</div>
+<div style="text-align:right">
+<a href="GraphShow.html" class="excerpt-link">SVG zoom &rarr;</a>
+</div>
+</div>
+</div>
+<!-- <img src="images/spacergraph.png" width="280" height="90" alt="spacergraph"> -->
+</div>
+<!-- end FlexSlider -->
+</div>
+<hr class="fat">
+<div class="row">
+<div class="sixteen columns">
+<header>
+<h3 class="remove-bottom">Copyright</h3>
+</header>
+This is the license for the software package <strong>Nauty and
+Traces</strong>, package versions 2.6 and later. <br>Five categories of software are included in the package:
+<img src="images/spacer.gif" width="0" height="20" alt="20height"><br>
+A. All files not listed as B-E below, copyright Brendan McKay (1984-)<br>
+B. Files traces.h, traces.h and dretodot.c, copyright Adolfo Piperno (2008-)<br>
+C. File watercluster2.c, copyright Gunnar Brinkmann (2009-)<br>
+D. Files planarity.h and planarity.c, copyright Magma project,
+   University of Sydney<br>
+E. Files nautycliquer.h and nautycliquer.c, copyright to Sampo
+   Niskanen and Patric Ostergard.
+
+<br><img src="images/spacer.gif" width="0" height="20" alt="20height">Licensed 
+under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License at
+
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" class="excerptnotrnobord-link" 
+style="color:#d83f28"><b>https://www.apache.org/licenses/LICENSE-2.0</b></a>.
+
+<br>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+<br>Brendan McKay: Australian National University; Brendan.McKay@anu.edu.au
+<img src="images/spacer.gif" width="1" height="20" alt="20height">
+<br>
+Adolfo Piperno: University of Rome "Sapienza"; piperno@di.uniroma1.it
+<br>
+Gunnar Brinkmann: University of Ghent; Gunnar.Brinkmann@UGent.be
+<br>
+Magma Administration: University of Sydney; admin@maths.usyd.edu.au
+<br>
+Patric Ostergard: Aalto Univerity; patric.ostergard@aalto.fi
+<br><img src="images/spacer.gif" width="1" height="20" alt="20height">
+
+<p>Earlier (pre-2.6) versions of this package carried a different
+notice: "Permission is hereby given for use and/or distribution
+with the exception of sale for profit or application with nontrivial
+military significance." These days most people use nauty via a
+larger package such as Magma, Sage, or GAP, and often they don't
+even know they are using nauty. Due to the legal nonsense that
+large package distributors need to worry about, it has proved too
+much trouble to maintain an idiosyncratic licence. I didn't change
+my opinion about military use, but it is no longer part of the
+formal notice. Brendan McKay (Jan 20, 2016)</p>
+
+</div>
+</div> 
+</div>
+<!-- end #main.container -->
+<!-- footer -->
+<footer id="colophon">
+<div class="footer-upper container">
+<p id="contact" class="remove-bottom" style="font-size:14px; text-transform:uppercase">Contacts</p>
+(nauty) B. McKay - &#098;&#100;&#109;&#032;&#097;&#116;&#032;&#099;&#115;&#032;&#100;&#111;&#116;&#032;&#097;&#110;&#117;&#032;&#100;&#111;&#116;&#032;&#101;&#100;&#117;&#032;&#100;&#111;&#116;&#032;&#097;&#117;<br>
+(Traces) A. Piperno - &#112;&#105;&#112;&#101;&#114;&#110;&#111;&#032;&#097;&#116;&#032;&#100;&#105;&#032;&#100;&#111;&#116;&#032;&#117;&#110;&#105;&#114;&#111;&#109;&#097;&#049;&#032;&#100;&#111;&#116;&#032;&#105;&#116;
+</div>
+
+<div id="footer-base" style="background-color:#822433; font-style:normal">
+<div class="container">
+<div class="two-thirds column alpha">
+<a class="button nobottom" target="_top" href="#body">TOP</a>
+</div>
+<div class="one-third column omega" style="text-align:right">
+&copy; SevenSpark 2011
+</div>
+</div>
+</div>
+</footer>
+<!-- end footer -->
+</div>
+<!-- end .wrap -->
+<!-- JS
+================================================== -->
+<!-- jQuery 1.6.2 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- Tabs -->
+<script src="javascripts/tabs.js"></script>
+<!-- prettyPhoto plugin -->
+<script src="javascripts/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+<!-- FlexSlider plugin --> 
+<script src="javascripts/flexslider/jquery.flexslider.js"></script>
+<!-- AJAX Contact Form plugin -->
+<script type="text/javascript" src="ajaxcontact/js/jquery.jigowatt.js"></script>
+<!-- Agility JS -->
+<script src="javascripts/agility.js"></script>
+<!-- Google Maps API -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!-- Twitter Feed -->
+<script src="https://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="javascripts/fix-ie.js"></script>
+<![endif]-->
+<!-- end Scripts -->
+<!-- End Document
+================================================== -->
+<!-- Agility - Responsive HTML5/CSS3 Template by SevenSpark https://agility-html.sevenspark.com -->
+</body>
+</html>
