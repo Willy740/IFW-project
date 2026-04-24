@@ -1,6 +1,11 @@
-version = 1.0
+version = "1.0"
 project_name = "IFW-project"
 
 project.polling_frequency = 10
-project.alert_threshold = 5.0
-project.graphs = ["CF", "A_"]
+project.alert_threshold	  = 5.0
+project.graphs		  = ["CF", "A_"]
+
+game.base_graph		= "CF"
+game.red_graph		= "A_"
+game.blue_graph		= "?"
+game.bias		= 1
