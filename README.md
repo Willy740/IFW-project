@@ -112,3 +112,29 @@ Je kan dit bestand openen met een teksteditor of inladen in een spreadsheet voor
 - De `config.toml` bevat nog velden (`threads`, `starting_player`, `n`) die momenteel niet in alle versies zichtbaar zijn — controleer of je versie van het bestand volledig is.
 - De solver vereist een Unix-omgeving met `bash`. Op Windows gebruik je best WSL.
 - Foutafhandeling bij ongeldige graph6-strings is nog minimaal.
+
+## Testen
+
+De tests vereisen `pytest`:
+
+```bash
+pip install pytest
+```
+
+Voer de tests uit vanuit de hoofdmap van het project:
+
+```bash
+pytest test_main.py
+```
+
+Of voer alle tests in het project tegelijk uit:
+
+```bash
+pytest
+```
+
+Voor uitgebreidere uitvoer:
+
+```bash
+pytest -v test_main.py
+```
