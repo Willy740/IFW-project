@@ -5,12 +5,9 @@ def parseer_resultaat(uitvoer)
 
 
 # Test_main.py
-def setUp(self)
-def tearDown(self)
-
-in def test_wrong_order(self)
-       |self.assertNotEqual(cols[1], "CF")   # start staat niet meer op positie 1
-       |self.assertNotEqual(cols[5], "rood") # winnaar staat niet meer op positie 5
-       |
-	this part is AI generated
-
+in  def test_wrong_order(self, tmpdir)
+        |cols = bestand.read().strip().split("\t")
+        |assert cols[1] != "CF"
+        |assert cols[5] != "rood"
+	|
+	|AI genarated
